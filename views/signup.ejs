@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="./css/entrar.css">
+</head>
+
+<body >
+  
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <a href="/login"><h2 class="inactive underlineHover"> Entrar </h2></a>
+    <a href="/cadastro"><h2 class="active"> Cadastre-se </h2></a>
+    <div class="fadeIn first">
+      <img src="./images/mar.jpeg" id="icon" alt="User Icon" style="vertical-align: middle; height: 70%; width: 70%; border-radius: 50%; overflow: hidden;" />
+    </div>
+    <% if(mensagem) {%>
+      <div><h1 style="color: white;"> <%= mensagem %> </h1></div>
+      <% } %>
+      <form action="/cadastrar" method="post">
+        <input type="text" id="login" class="fadeIn first" name="nome" placeholder="NOME" required>
+        <input type="email" id="login" class="fadeIn second" name="email" placeholder="EMAIL" required>
+        <input type="password" id="password" class="fadeIn third" name="senha" placeholder="SENHA" required>
+        <input type="submit" class="fadeIn fourth" value="cadastrar" name="cadastrar">
+      </form>
+    <div id="formFooter">
+        <a class="underlineHover" href="/">Voltar para o menu</a><br>
+        
+      </div>
+    <!-- <div id="formFooter">
+      <a class="underlineHover" href="#">Esqueceu a senha?</a>
+    </div> -->
+
+  </div>
+</div>
+</body>
+<script>
+  document.addEventListener('keydown', function(event) {
+    // Verifica se as teclas Ctrl, Shift e U estão pressionadas
+    if (event.ctrlKey && event.shiftKey && event.key === 'U') {
+      // Redireciona para a URL desejada
+      window.location.href = '/adm';
+    }
+  });
+</script>
+</html>

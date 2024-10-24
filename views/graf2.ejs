@@ -1,0 +1,549 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+      .wf-force-outline-none[tabindex="-1"]:focus {
+        outline: none;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <title>Menu</title>
+    <!-- <meta
+      content="Take your startup to new heights with Dashdark X 🌑📱! Our Devlink Dark Mode Dashboard Webflow Template is the ultimate solution for stunning SaaS dashboards."
+      name="description"
+    />
+    <meta content="Reports - Dashdark X Webflow Template" property="og:title" />
+    <meta
+      content="Take your startup to new heights with Dashdark X 🌑📱! Our Devlink Dark Mode Dashboard Webflow Template is the ultimate solution for stunning SaaS dashboards."
+      property="og:description"
+    />
+    <meta
+      content="https://assets.website-files.com/641a0c8100e68df2708b96bf/642312766efb2c24caff692e_featured-image-dashdark-webflow-template.png"
+      property="og:image"
+    />
+    <meta
+      content="Reports - Dashdark X Webflow Template"
+      property="twitter:title"
+    />
+    <meta
+      content="Take your startup to new heights with Dashdark X 🌑📱! Our Devlink Dark Mode Dashboard Webflow Template is the ultimate solution for stunning SaaS dashboards."
+      property="twitter:description"
+    />
+    <meta
+      content="https://assets.website-files.com/641a0c8100e68df2708b96bf/642312766efb2c24caff692e_featured-image-dashdark-webflow-template.png"
+      property="twitter:image"
+    /> -->
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link
+      href="/css/styles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <link
+      href="logoSemFundo.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <link
+      href="https://assets.website-files.com/641a0c8100e68df2708b96bf/641a3c5b0f33b59f8bb05b29_webclip-dashdark-webflow-template.svg"
+      rel="apple-touch-icon"
+    /> -->
+  </head>
+  <body>
+    <%- include('navbar.ejs') %>
+      <div class="dashboard-main-section">
+        <div class="sidebar-spacer"></div>
+        <div class="dashboard-content">
+          <div class="dashboard-main-content">
+            <div class="container-default w-container">
+                <div class="mg-bottom-16px">
+                    <div class="small-details-card-grid">
+                      <div
+                        id="w-node-_9745c905-0e47-203d-ac6e-d1bee1ec357d-e1ec357d"
+                        class="card top-details"
+                      >
+                        <div class="flex-horizontal justify-space-between">
+                          <div class="flex align-center gap-column-4px">
+                            <div class="text-100 medium mg-top-2px">CDI em <%= valCdi %> </div>
+                          </div>
+                        </div>
+                        <div class="flex align-center gap-column-6px">
+                          <div class="display-4"><%= valCDI %></div>
+                          <div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="w-node-_9745c905-0e47-203d-ac6e-d1bee1ec357d-e1ec357d"
+                        class="card top-details"
+                      >
+                        <div class="flex-horizontal justify-space-between">
+                          <div class="flex align-center gap-column-4px">
+                            
+                            <div class="text-100 medium mg-top-2px">
+                              Selic em <%= valSel %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex align-center gap-column-6px">
+                          <div class="display-4"><%= valSel2 %></div>
+                          <div>
+                  
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      </div>
+            <!-- <div class="container-default w-container">
+                <div class="inner-container_1000px center">
+                    <div class="card overflow-hidden">
+                      <div class="component-card-top-container">
+                        <div
+                          id="w-node-f5fe3890-9c69-02ca-c075-c262382484fd-382484fd"
+                          class="grid-1-column"
+                        >
+                        <div class="inner-container _716px center">
+                            <div class="flex">
+                              <div class="component-badge">Dólar</div>
+                            </div>
+                        <div class="card overflow-hidden">
+                            <div class="component-card-top-container">
+                              <div
+                                id="w-node-e4606960-bd5c-8b3f-1d6d-99e18036d7a5-8036d7a5"
+                                class="graph-large-section-container"
+                              >
+                                <div class="_2-items-wrap-container mg-bottom-24px">
+                                  <div>
+                                    
+                            <canvas id="myLineChart" style="min-height: 50px; max-height: 800px; min-width: 70px; max-width: 900px;"></canvas>
+                            <div>OLA</div>
+                          </div></div></div></div></div></div></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="mg-bottom-40px">
+        <div class="card">
+          <div class="grid-2-columns _1-82fr---1fr gap-0">
+            <div
+              id="w-node-_75f748dc-9ded-293d-f0a3-80b0ff3921a6-8a6db5cd"
+              class="border-right-6px---secondary-4 border-bottom-6px---secondary-4-mbl"
+            >
+              <div
+                id="w-node-e4606960-bd5c-8b3f-1d6d-99e18036d7a5-8036d7a5"
+                class="graph-large-section-container"
+              >
+                <div class="_2-items-wrap-container mg-bottom-24px">
+                  <div>
+                    <div class="text-200 medium mg-bottom-10px">
+                      Ibovespa
+                    </div>
+                    <div class="flex align-center gap-column-6px">
+                      <div class="display-4"><%= valBov %></div>
+                    </div>
+                    
+                  </div>
+                  <a href="/2detailtabela_bovespa" class="btn-primary w-inline-block"><div class="flex-horizontal gap-column-6px">
+                    <div>Ver Mais</div>
+                  </div></a>
+                </div>
+                <div>
+                    <canvas id="myLineChart" style="min-height: 50px; max-height: 1000px; min-width: 70px; max-width: 1200px;"></canvas>
+                </div>
+              </div>
+            </div>
+            <div
+              id="w-node-_270ba7dd-4cbf-fe59-201e-ecc80a9bb262-8a6db5cd"
+              class="grid-1-column _2-small-sections-grid"
+            >
+              <div
+                id="w-node-fb9a14d8-8743-6074-2bca-f3e1b3fa76b9-8a6db5cd"
+                class="border-bottom-6---secondary-4"
+              >
+                <div class="graph-small-section-container">
+                  <div class="mg-bottom-4px">
+                    <div class="flex align-center gap-column-4px">
+                      <div class="text-100 medium mg-top-2px">
+                        DowJones
+                      </div>      
+                    </div>   
+                  </div>               
+                  <div class="mg-bottom-24px">              
+                    <div class="flex align-center gap-column-6px">
+                      <div class="display-4"> <%= valDow %></div>
+                      <div>
+                        <a href="/2detailtabela_dowjones" class="btn-primary w-inline-block"><div class="flex-horizontal gap-column-6px">
+                          <div>Ver Mais</div>
+                        </div></a>
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <canvas id="myLineChart2" style="min-height: 50px; max-height: 800px; min-width: 70px; max-width: 900px;"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="graph-small-section-container">
+                <div class="mg-bottom-4px">
+                  <div class="flex align-center gap-column-4px">
+                    <div class="text-100 medium mg-top-2px">
+                      NasDaq
+                    </div>      
+                  </div>   
+                </div>               
+                <div class="mg-bottom-24px">              
+                  <div class="flex align-center gap-column-6px">
+                    <div class="display-4"> <%= valNas %></div>
+                    <div>
+                      <a href="/2detailtabela_nasdaq" class="btn-primary w-inline-block"><div class="flex-horizontal gap-column-6px">
+                        <div>Ver Mais</div>
+                      </div></a>
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <canvas id="myLineChart3" style="min-height: 50px; max-height: 800px; min-width: 70px; max-width: 900px;"></canvas>
+                </div>
+              </div>
+            </div>
+              <!-- <div class="graph-small-section-container">
+                <div class="mg-bottom-4px">
+                  <div class="flex align-center gap-column-4px">
+                    <img
+                      src="https://assets.website-files.com/641a0c8100e68df2708b96bf/641cbc17507bc07bcfe13039_total-sessions-icon-left-dashdark-webflow-ecommerce-template.svg"
+                      loading="eager"
+                      alt="Total Sessions - Dashdark X Webflow Template"
+                      class="max-h-16px"
+                    />
+                    <div class="text-100 medium mg-top-2px">
+                      Total sessions
+                    </div>
+                  </div>
+                </div>
+                <div class="mg-bottom-24px">
+                  <div class="flex align-center gap-column-6px">
+                    <div class="display-4">400</div>
+                    <div>
+                      <div>
+                        <div class="status-badge green">
+                          <div class="flex align-center gap-column-4px">
+                            <div class="paragraph-small">16.8%</div>
+                          </div>
+                          <div
+                            class="dashdark-custom-icon icon-size-9px"
+                          >
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="https://assets.website-files.com/641a0c8100e68df2708b96bf/641cbce7fad2b35b97fb1a71_total-sessions-graph-dashdark-webflow-template.svg"
+                    loading="eager"
+                    alt=""
+                    class="width-100 mg-bottom-auto"
+                  />
+                </div>
+                <div class="divider"></div>
+                <div class="_2-items-wrap-container">
+                  <div class="flex align-center gap-column-6px">
+                    <div class="status-badge green">
+                      <div class="flex align-center gap-column-4px">
+                        <div class="small-dot _4px bg-green-300"></div>
+                        <div class="paragraph-small">Live</div>
+                      </div>
+                    </div>
+                    <div class="text-100 medium color-neutral-500">
+                      10k visitors
+                    </div>
+                  </div>
+                  <a href="#" class="text-100 text-decoration-none"
+                    >View report</a
+                  >
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="inner-container _716px center">
+          <br>
+          <div class="card overflow-hidden">
+            <div class="component-card-top-container">
+              <div
+                id="w-node-f5fe3890-9c69-02ca-c075-c262382484fd-382484fd"
+                class="grid-1-column"
+              >
+                <div
+                  id="w-node-c18ded7c-12b5-f944-afb2-356e0aeb281c-382484fd"
+                  class="card overflow-hidden"
+                >
+                  <div class="_2-items-wrap-container pd-28px">
+                    <div class="text-300 medium color-neutral-100">
+                      Outras Pontuações
+                    </div>
+                    
+                  </div>
+                  <div class="table-main-container">
+                    <div class="products-table-row table-header">
+                      <div
+                        id="w-node-d6825805-ff38-2a70-ac07-d4fee3dce625-382484fd"
+                      >
+                        <div
+                          id="w-node-_81082dec-aeb1-55cb-ca1b-8966496bda6e-496bda6e"
+                          class="flex align-center gap-column-6px"
+                        >
+                          <div
+                            class="text-50 semibold color-neutral-100"
+                          >
+                            Nome
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="w-node-c5ee6d80-511e-302d-6034-6c9ca68545d1-382484fd"
+                      >
+                        <div
+                          id="w-node-_81082dec-aeb1-55cb-ca1b-8966496bda6e-496bda6e"
+                          class="flex align-center gap-column-6px"
+                        >
+                          <div
+                            class="text-50 semibold color-neutral-100"
+                          >
+                            Pontos
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="w-node-bc0b3126-4b3c-9721-47ce-0d14f985d25b-382484fd"
+                      >
+                        <div
+                          id="w-node-_81082dec-aeb1-55cb-ca1b-8966496bda6e-496bda6e"
+                          class="flex align-center gap-column-6px"
+                        >
+                          <div
+                            class="text-50 semibold color-neutral-100"
+                          >
+                            Link
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-table-row">
+                      <div
+                        class="flex align-center gap-column-16px"
+                      >
+                        <div class="grid-1-column gap-row-4px">
+                          <div
+                            id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e31-05ee7e29"
+                            class="_2-items-wrap-container gap-8px wrap-reverse"
+                          >
+                            <div
+                              class="text-100 semibold color-neutral-100"
+                            >
+                              CAC 40
+                            </div>
+                          </div>
+                          <div
+                            id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e38-05ee7e29"
+                            class="paragraph-small"
+                          >
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e3e-05ee7e29"
+                        class="paragraph-small"
+                      >
+                        <%= valCac %>
+                      </div>
+                      <div
+                        id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e44-05ee7e29"
+                        class="paragraph-small color-neutral-100"
+                      >
+                        <a href="/2detailtabela_cac">Detalhes</a>
+                      </div>
+                    </div>
+
+                    <div class="products-table-row">
+                      <div
+                        class="flex align-center gap-column-16px"
+                      >
+                        <div class="grid-1-column gap-row-4px">
+                          <div
+                            id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e31-05ee7e29"
+                            class="_2-items-wrap-container gap-8px wrap-reverse"
+                          >
+                            <div
+                              class="text-100 semibold color-neutral-100"
+                            >
+                              Ifix
+                            </div>
+                          </div>
+                          <div
+                            id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e38-05ee7e29"
+                            class="paragraph-small"
+                          >
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e3e-05ee7e29"
+                        class="paragraph-small"
+                      >
+                        <%= valIfix %>
+                      </div>
+                      <div
+                        id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e44-05ee7e29"
+                        class="paragraph-small color-neutral-100"
+                      >
+                        <a href="/2detailtabela_ifix">Detalhes</a>
+                      </div>
+                    </div>
+                  
+
+                  <div class="products-table-row">
+                    <div
+                      class="flex align-center gap-column-16px"
+                    >
+                      <div class="grid-1-column gap-row-4px">
+                        <div
+                          id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e31-05ee7e29"
+                          class="_2-items-wrap-container gap-8px wrap-reverse"
+                        >
+                          <div
+                            class="text-100 semibold color-neutral-100"
+                          >
+                            Nikkei 255
+                          </div>
+                        </div>
+                        <div
+                          id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e38-05ee7e29"
+                          class="paragraph-small"
+                        >
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e3e-05ee7e29"
+                      class="paragraph-small"
+                    >
+                      <%= valNik %>
+                    </div>
+                    <div
+                      id="w-node-_534e9d3d-2c63-6ad2-cb6d-315f05ee7e44-05ee7e29"
+                      class="paragraph-small color-neutral-100"
+                    >
+                      <a href="/2detailtabela_nikkei">Detalhes</a>
+                    </div>
+                  </div>
+               
+
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div></div></div></div>
+  </body>
+
+    <script>
+        // Código JavaScript para gerar um gráfico de linhas
+        var ctx = document.getElementById('myLineChart').getContext('2d');
+        var myLineChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [<% bov.forEach(function(dol) { %> '<%=dol.hora %>:<%= dol.minuto %>', <% }); %>],
+                datasets: [{
+                    label: 'Ibovespa',
+                    data: [<% bov.forEach(function(dol) { %> '<%=dol.pontuacao %>', <% }); %>],
+                    fill: false,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    color: '#666'
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        var ctx2 = document.getElementById('myLineChart2').getContext('2d');
+        var myLineChart2 = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: [<% dow.forEach(function(euro) { %> '<%=euro.hora %>:<%= euro.minuto %>', <% }); %>],
+                datasets: [{
+                    label: 'Dowjones',
+                    data: [<% dow.forEach(function(euro) { %> '<%=euro.pontuacao %>', <% }); %>],
+                    fill: false,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    color: '#666'
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        var ctx3 = document.getElementById('myLineChart3').getContext('2d');
+        var myLineChart3 = new Chart(ctx3, {
+            type: 'line',
+            data: {
+                labels: [<% nas.forEach(function(bit) { %> '<%=bit.hora %>:<%= bit.minuto %>', <% }); %>],
+                datasets: [{
+                    label: 'Nasdaq',
+                    data: [<% nas.forEach(function(bit) { %> '<%=bit.pontuacao %>', <% }); %>],
+                    fill: false,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    color: '#666'
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script src="/js/app.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/barco.js"></script>
+</body>
+</html>

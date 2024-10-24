@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="./css/entrar.css">
+  <title>Login</title>
+</head>
+<body>
+  
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <br>
+    <div class="fadeIn first">
+      <img src="./images/protagonista.png" id="icon" alt="User Icon" style="vertical-align: middle; height: 70%; width: 70%; border-radius: 50%; overflow: hidden;" />
+    </div>
+    <% if(mensagem) {%>
+    <div><h1 style="color: white;"> <%= mensagem %> </h1></div>
+    <% } %>
+    <div><h3 style="color: white;">Digite seu email para redefinir a senha</h3></div>
+    <form action="/esqueceu" method="post">
+      <input type="email" id="login" class="fadeIn second" name="email" placeholder="EMAIL" required>
+      <input type="submit" class="fadeIn fourth" value="redefinir" name="redefinir">
+    </form>
+    <div id="formFooter">
+        <a class="underlineHover" href="/">Voltar para o menu</a><br>
+        
+      </div>
+    <div id="formFooter">
+      <a class="underlineHover" href="/login">Lembrei da Senha</a>
+    </div>
+    
+  </div>
+</div>
+</body>
+</html>

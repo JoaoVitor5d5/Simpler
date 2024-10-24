@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Filmes</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="./css/entrar.css">
+</head>
+
+<body >
+  
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <% if(mensagem) {%>
+      <div><h1 style="color: white;"> <%= mensagem %> </h1></div>
+      <% } %>
+      <form action="/cadIndicaFilme" method="post">
+        <input type="text" id="login" class="fadeIn first" name="titulo" placeholder="TITULO" required>
+        <input type="text" id="login" class="fadeIn second" name="desc" placeholder="DESCRIÇÃO" required>
+        <input type="text" id="password" class="fadeIn third" name="link" placeholder="LINK" required>
+        <input type="submit" class="fadeIn fourth" value="cadastrar" name="cadastrar">
+      </form>
+  </div>
+</div>
+</body>
+</html>

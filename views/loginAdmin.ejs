@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="./css/entrar.css">
+  <title>Login</title>
+</head>
+<body>
+  
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <a href="#"><h2 class="active"> Administradores </h2></a>
+    <div class="fadeIn first">
+      <img src="./images/OIG.jpeg" id="icon" alt="User Icon" style="vertical-align: middle; height: 70%; width: 70%; border-radius: 50%; overflow: hidden;" />
+    </div>
+    <% if(mensagem) {%>
+    <div><h1 style="color: white;"> <%= mensagem %> </h1></div>
+    <% } %>
+    <form action="/loginAdm" method="post">
+      <input type="email" id="login" class="fadeIn second" name="email" placeholder="EMAIL" required>
+      <input type="password" id="password" class="fadeIn third" name="senha" placeholder="SENHA" required>
+      <input type="submit" class="fadeIn fourth" value="login" name="login">
+    </form>
+    <div id="formFooter">
+        <a class="underlineHover" href="/">Voltar para o menu</a><br>
+        
+      </div>
+    
+  </div>
+</div>
+</body>
+<script>
+  document.addEventListener('keydown', function(event) {
+    // Verifica se as teclas Ctrl, Shift e U estão pressionadas
+    if (event.ctrlKey && event.shiftKey && event.key === 'U') {
+      // Redireciona para a URL desejada
+      window.location.href = '/cadastro';
+    }
+  });
+</script>
+</html>
