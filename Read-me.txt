@@ -1,0 +1,9 @@
+para iniciar, com o node já instalado, use o comando
+
+npm i
+
+após, para iniciar o código, use
+
+node routes.js
+
+e espere 15 min antes de começar a utilizar, para que as APIs consigam fazer as buscas na internet
